@@ -65,6 +65,6 @@ Création d’une application PHP sur le serveur XAMPP installé sur votre propr
 
 Il y a plusieurs topologies possibles. Les deux que je connais sont :
 
-- L’ESP est configuré comme serveur Web. Les agents utilisateurs ne communiquent qu’avec lui.
-- L’ESP et les agents utilisateurs se connectent à un serveur externe (dans notre cas XAMPP).
+- L’ESP est configuré comme serveur Web. Les agents utilisateurs ne communiquent qu’avec lui. Exemple : [SIMPLE-WEBSOCKET.INO](https://github.com/NicHub/ouilogique-ESP8266-Arduino/tree/master/simple-websocket).
+- L’ESP et les agents utilisateurs se connectent à un serveur externe (dans notre cas XAMPP). Exemple : [Station météo](http://notepadxx.com/meteo/).
 
