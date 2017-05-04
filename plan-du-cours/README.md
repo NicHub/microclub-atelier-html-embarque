@@ -11,7 +11,7 @@ Prérequis :
 - Avoir un ordinateur portable macOS, Windows ou Linux avec un OS récent.
 - Avoir installé [MAMP (macOS, Windows)](https://www.mamp.info/en/) ou [XAMPP (Linux)](https://www.apachefriends.org/fr/index.html).
 
-# 1ère soirée : Les éléments de base d’une page Web : HTML, CSS, JavaScript
+# 1ʳᵉ soirée : Les éléments de base d’une page Web : HTML, CSS, JavaScript
 
 ⇒ Création d’une page statique qui nous permettra d’aborder les notions suivantes :
 
@@ -40,7 +40,7 @@ Prérequis :
 	- Vidéos
 
 
-# 2ème soirée : Rendre une page dynamique
+# 2ᵉ soirée : Rendre une page dynamique
 
 Création d’une application PHP sur le serveur MAMP¹ installé sur votre propre ordinateur et exemples de communication entre le serveur et la page Web statique créée lors de la première soirée.
 
@@ -61,7 +61,7 @@ Création d’une application PHP sur le serveur MAMP¹ installé sur votre prop
 - PHP
 
 
-# 3ème soirée : Création d’une application sur ESP8266
+# 3ᵉ soirée : Création d’une application sur ESP8266
 
 Il y a plusieurs topologies possibles. Les deux que je connais sont :
 
