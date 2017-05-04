@@ -42,7 +42,7 @@ Prérequis :
 
 # 2ème soirée : Rendre une page dynamique
 
-Création d’une application PHP sur le serveur MAMP[^1] installé sur votre propre ordinateur et exemples de communication entre le serveur et la page Web statique créée lors de la première soirée.
+Création d’une application PHP sur le serveur MAMP¹ installé sur votre propre ordinateur et exemples de communication entre le serveur et la page Web statique créée lors de la première soirée.
 
 - JavaScript
 	- JS intégré
@@ -66,7 +66,8 @@ Création d’une application PHP sur le serveur MAMP[^1] installé sur votre pr
 Il y a plusieurs topologies possibles. Les deux que je connais sont :
 
 - L’ESP est configuré comme serveur Web. Les agents utilisateurs ne communiquent qu’avec lui. Exemple : [SIMPLE-WEBSOCKET.INO](https://github.com/NicHub/ouilogique-ESP8266-Arduino/tree/master/simple-websocket).
-- L’ESP et les agents utilisateurs se connectent à un serveur externe (dans notre cas MAMP[^1]). Exemple : [Station météo](http://notepadxx.com/meteo/).
+- L’ESP et les agents utilisateurs se connectent à un serveur externe (dans notre cas MAMP¹). Exemple : [Station météo](http://notepadxx.com/meteo/).
 
+---
 
-[^1]: MAMP pour macOS et Windows. XAMPP pour Linux.
+¹ MAMP pour macOS et Windows. XAMPP pour Linux.
