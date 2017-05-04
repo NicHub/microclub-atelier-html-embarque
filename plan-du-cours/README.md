@@ -9,7 +9,7 @@ Durée : À définir (probablement 3 + 1)
 
 Prérequis :
 - Avoir un ordinateur portable macOS, Windows ou Linux avec un OS récent.
-- Avoir installé [XAMPP](https://www.apachefriends.org/fr/index.html).
+- Avoir installé [MAMP (macOS, Windows)](https://www.mamp.info/en/) ou [XAMPP (Linux)](https://www.apachefriends.org/fr/index.html).
 
 # 1ère soirée : Les éléments de base d’une page Web : HTML, CSS, JavaScript
 
