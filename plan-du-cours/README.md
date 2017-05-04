@@ -11,7 +11,7 @@ Prérequis :
 - Avoir un ordinateur portable macOS, Windows ou Linux avec un OS récent.
 - Avoir installé [MAMP (macOS, Windows)](https://www.mamp.info/en/) ou [XAMPP (Linux)](https://www.apachefriends.org/fr/index.html).
 
-# 1ʳᵉ soirée : Les éléments de base d’une page Web : HTML, CSS, JavaScript
+# 1re soirée : Les éléments de base d’une page Web : HTML, CSS, JavaScript
 
 ⇒ Création d’une page statique qui nous permettra d’aborder les notions suivantes :
 
