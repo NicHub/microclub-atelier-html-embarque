@@ -85,7 +85,8 @@ La procédure ci-dessus ne doit être exécutée qu’une fois. Les synchronisat
 
 - Installer *GitHub Desktop*.
 - Accepter l’installation de *Git Shell*.
-- Copier-coller la commande suivante dans *Git Shell*.
+- Ouvrir *Git Shell* en cliquant sur l’icône en forme de roue dentée en haut à droite de *GitHub Desktop* et en cliquant sur “Open in Git Shell”.
+- Copier-coller les commandes ci-dessous dans *Git Shell* :
 
 ```
 cd "%USERPROFILE%\Desktop\"
