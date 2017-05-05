@@ -5,9 +5,24 @@
 
 
 
-# Synchronisation des fichiers du cours avec *GitHub Desktop*
 
-> En mode graphique, pour *Windows* et *macOS* seulement.
+
+# Synchronisation des fichiers du cours
+
+	- Avec l’interface graphique *GitHub Desktop*
+	- En ligne de commande avec *Bash* sur *Linux* et *macOS*
+	- En ligne de commande avec *CMD* pour *Windows*
+	- En téléchargeant l’archive ZIP
+
+
+
+
+
+# Synchronisation des fichiers du cours avec l’interface graphique *GitHub Desktop*
+
+> La synchronisation en mode graphique n’est disponible que pour *Windows* et *macOS*.
+> Il est nécessaire de créer un compte sur GitHub pour que ça fonctionne.
+
 > Pour les utilisateurs de *Linux*, voir ci-dessous.
 
 ## Pour la première synchronisation
@@ -28,12 +43,18 @@ La procédure ci-dessus ne doit être exécutée qu’une fois. Les sychronisati
 - Cliquer sur le bouton “Sync” en haut à droite.
 
 
-# Synchronisation des fichiers du cours avec *Bash* sur *Linux* et *macOS*
+
+
+
+# Synchronisation des fichiers du cours en ligne de commande avec *Bash* sur *Linux* et *macOS*
+
+> Le logiciel `git` est préinstallé sur la plupart des systèmes *Linux* et *macOS*.
 
 ## Pour la première synchronisation
 
 	cd ~/Desktop
 	git clone https://github.com/NicHub/microclub-atelier-html-embarque.git
+	cd microclub-atelier-html-embarque
 
 ## Pour les synchronisations suivantes
 
@@ -41,9 +62,12 @@ La procédure ci-dessus ne doit être exécutée qu’une fois. Les sychronisati
 	git pull
 
 
-# Synchronisation des fichiers du cours avec *CMD* sur *Windows*
 
-> Pour les utilisateurs avertis uniquement. Si vous ne voulez pas utiliser CMD, lisez la procédure d’utilisation de *GitHub Desktop*.
+
+
+# Synchronisation des fichiers du cours en ligne de commande avec *CMD* pour *Windows*
+
+> Le logiciel `Git Shell` doit être installé au préalable en installant l’application graphique *GitHub Desktop*.
 
 ## Pour la première synchronisation
 
@@ -60,3 +84,13 @@ git clone https://github.com/NicHub/microclub-atelier-html-embarque.git "%USERPR
 	cd "%USERPROFILE%\Desktop\microclub-atelier-html-embarque"
 	git pull
 
+
+
+
+
+# Synchronisation des fichiers du cours en téléchargeant l’archive ZIP
+
+> Cette méthode est déconseillée, car vous devrez télécharger à nouveau cette archive après chaque mise à jour des fichiers du cours !*
+
+Vous pouvez télécharger les fichiers du cours dans une archive ZIP en cliquant sur ce lien :
+<https://github.com/NicHub/microclub-atelier-html-embarque/archive/master.zip>
