@@ -28,7 +28,7 @@
 > La synchronisation en mode graphique n’est disponible que pour *Windows* et *macOS*.
 > Il est nécessaire de créer un compte sur [GitHub](https://github.com/join) pour que ça fonctionne.
 
-> Pour les utilisateurs de *Linux*, voir ci-dessous.
+> Pour les utilisateurs de *Linux*, [voir ci-dessous][2].
 
 ## Pour la première synchronisation
 
