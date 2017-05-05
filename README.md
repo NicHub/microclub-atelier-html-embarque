@@ -9,6 +9,8 @@
 
 # Synchronisation des fichiers du cours
 
+> Je propose 4 méthodes différentes pour synchroniser les fichiers du cours. Choisissez celle qui vous convient.
+
 - [Avec l’interface graphique *GitHub Desktop*][1]
 - [En ligne de commande avec *Bash* sur *Linux* et *macOS*][2]
 - [En ligne de commande avec *CMD* pour *Windows*][3]
@@ -42,7 +44,7 @@
 
 ## Pour les synchronisations suivantes
 
-La procédure ci-dessus ne doit être exécutée qu’une fois. Les sychronisations suivantes se font de la manière suivante :
+La procédure ci-dessus ne doit être exécutée qu’une fois. Les synchronisations suivantes se font de la manière suivante :
 
 - Ouvrir *GitHub Desktop*.
 - Cliquer sur le nom du dépôt “atelier-html-embarque” dans la colonne de gauche.
@@ -54,7 +56,11 @@ La procédure ci-dessus ne doit être exécutée qu’une fois. Les sychronisati
 
 # Synchronisation des fichiers du cours en ligne de commande avec *Bash* sur *Linux* et *macOS*
 
-> Le logiciel `git` est préinstallé sur la plupart des systèmes *Linux* et *macOS*.
+> Le logiciel `git` est préinstallé sur la plupart des systèmes *Linux* et *macOS*. Pour vérifier que c’est bien le cas, il vous suffit de taper la commande suivante :
+
+	which git
+
+> La version de `git` n’a pas d’importance, car nous n’utiliserons que les commandes `clone` et `pull`.
 
 ## Pour la première synchronisation
 
@@ -96,7 +102,7 @@ git clone https://github.com/NicHub/microclub-atelier-html-embarque.git "%USERPR
 
 # Synchronisation des fichiers du cours en téléchargeant l’archive ZIP
 
-> Cette méthode est déconseillée, car vous devrez télécharger à nouveau cette archive après chaque mise à jour des fichiers du cours !*
+> Cette méthode est déconseillée, car vous devrez télécharger à nouveau cette archive après chaque mise à jour des fichiers du cours ! Cependant, c’est la plus rapide et la plus facile à mettre en œuvre.
 
 Vous pouvez télécharger les fichiers du cours dans une archive ZIP en cliquant sur ce lien :
 <https://github.com/NicHub/microclub-atelier-html-embarque/archive/master.zip>
