@@ -88,7 +88,9 @@ La procédure ci-dessus ne doit être exécutée qu’une fois. Les synchronisat
 - Copier-coller la commande suivante dans *Git Shell*.
 
 ```
-git clone https://github.com/NicHub/microclub-atelier-html-embarque.git "%USERPROFILE%\Desktop\microclub-atelier-html-embarque"
+cd "%USERPROFILE%\Desktop\"
+git clone https://github.com/NicHub/microclub-atelier-html-embarque.git
+cd microclub-atelier-html-embarque
 ```
 
 ## Pour les synchronisations suivantes
