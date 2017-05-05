@@ -2,5 +2,5 @@
 
 Ce fichier a déménagé ici :
 
-[wiki/plan-du-cours](wiki/plan-du-cours)
+[plan-du-cours](https://github.com/NicHub/microclub-atelier-html-embarque/wiki/plan-du-cours)
 
