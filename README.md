@@ -51,7 +51,7 @@ La procédure ci-dessus ne doit être exécutée qu’une fois. Les sychronisati
 - Accepter l’installation de *Git Shell*.
 - Copier-coller la commande suivante dans *Git Shell*.
 
-	git clone https://github.com/NicHub/microclub-atelier-html-embarque.git "%USERPROFILE%\Desktop\microclub-atelier-html-embarque"
+`git clone https://github.com/NicHub/microclub-atelier-html-embarque.git "%USERPROFILE%\Desktop\microclub-atelier-html-embarque"`
 
 ## Pour les synchronisations suivantes
 
