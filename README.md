@@ -9,10 +9,15 @@
 
 # Synchronisation des fichiers du cours
 
-- Avec l’interface graphique *GitHub Desktop*
-- En ligne de commande avec *Bash* sur *Linux* et *macOS*
-- En ligne de commande avec *CMD* pour *Windows*
-- En téléchargeant l’archive ZIP
+- [Avec l’interface graphique *GitHub Desktop*][1]
+- [En ligne de commande avec *Bash* sur *Linux* et *macOS*][2]
+- [En ligne de commande avec *CMD* pour *Windows*][3]
+- [En téléchargeant l’archive ZIP][4]
+
+[1]: #synchronisation-des-fichiers-du-cours-avec-linterface-graphique-github-desktop
+[2]: #synchronisation-des-fichiers-du-cours-en-ligne-de-commande-avec-bash-sur-linux-et-macos
+[3]: #synchronisation-des-fichiers-du-cours-en-ligne-de-commande-avec-cmd-pour-windows
+[4]: #synchronisation-des-fichiers-du-cours-en-téléchargeant-larchive-zip
 
 
 
@@ -95,3 +100,7 @@ git clone https://github.com/NicHub/microclub-atelier-html-embarque.git "%USERPR
 
 Vous pouvez télécharger les fichiers du cours dans une archive ZIP en cliquant sur ce lien :
 <https://github.com/NicHub/microclub-atelier-html-embarque/archive/master.zip>
+
+
+
+
