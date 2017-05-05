@@ -9,10 +9,10 @@
 
 # Synchronisation des fichiers du cours
 
-	- Avec l’interface graphique *GitHub Desktop*
-	- En ligne de commande avec *Bash* sur *Linux* et *macOS*
-	- En ligne de commande avec *CMD* pour *Windows*
-	- En téléchargeant l’archive ZIP
+- Avec l’interface graphique *GitHub Desktop*
+- En ligne de commande avec *Bash* sur *Linux* et *macOS*
+- En ligne de commande avec *CMD* pour *Windows*
+- En téléchargeant l’archive ZIP
 
 
 
@@ -21,12 +21,13 @@
 # Synchronisation des fichiers du cours avec l’interface graphique *GitHub Desktop*
 
 > La synchronisation en mode graphique n’est disponible que pour *Windows* et *macOS*.
-> Il est nécessaire de créer un compte sur GitHub pour que ça fonctionne.
+> Il est nécessaire de créer un compte sur [GitHub](https://github.com/join) pour que ça fonctionne.
 
 > Pour les utilisateurs de *Linux*, voir ci-dessous.
 
 ## Pour la première synchronisation
 
+- Se connecter à son compte GitHub <https://github.com/login>.
 - Télécharger et installer l’application *GitHub Desktop* <https://desktop.github.com/>.
 - Ouvrir l’application *GitHub Desktop*.
 - Aller sur la page du projet dans votre navigateur <https://github.com/NicHub/microclub-atelier-html-embarque>.
