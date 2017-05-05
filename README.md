@@ -7,8 +7,8 @@
 
 # Synchronisation des fichiers du cours avec *GitHub Desktop*
 
-> En mode graphique, pour Windows et macOS seulement.
-> Pour les utilisateurs de Linux, voir ci-dessous.
+> En mode graphique, pour *Windows* et *macOS* seulement.
+> Pour les utilisateurs de *Linux*, voir ci-dessous.
 
 ## Pour la première synchronisation
 
@@ -19,7 +19,7 @@
 - Dans l’application *GitHub Desktop* une fenêtre s’ouvre et vous permet de choisir l’emplacement des fichiers du cours. Choisissez le dossier de destination et cliquez sur “OK”.
 - *GitHub Desktop* télécharge les fichiers du cours.
 
-## Pour les synchronisations suivantes
+## Pour les synchronisations suivantes
 
 La procédure ci-dessus ne doit être exécutée qu’une fois. Les sychronisations suivantes se font de la manière suivante :
 
@@ -28,20 +28,22 @@ La procédure ci-dessus ne doit être exécutée qu’une fois. Les sychronisati
 - Cliquer sur le bouton “Sync” en haut à droite.
 
 
-# Synchronisation des fichiers du cours avec Bash sur Linux et macOS
+# Synchronisation des fichiers du cours avec *Bash* sur *Linux* et *macOS*
 
 ## Pour la première synchronisation
 
 	cd ~/Desktop
 	git clone https://github.com/NicHub/microclub-atelier-html-embarque.git
 
-## Pour les synchronisations suivantes
+## Pour les synchronisations suivantes
 
 	cd ~/Desktop/microclub-atelier-html-embarque
 	git pull
 
 
-# Synchronisation des fichiers du cours avec CMD sur Windows
+# Synchronisation des fichiers du cours avec *CMD* sur *Windows*
+
+> Pour les utilisateurs avertis uniquement. Si vous ne voulez pas utiliser CMD, lisez la procédure d’utilisation de *GitHub Desktop*.
 
 ## Pour la première synchronisation
 
@@ -51,7 +53,7 @@ La procédure ci-dessus ne doit être exécutée qu’une fois. Les sychronisati
 
 	git clone https://github.com/NicHub/microclub-atelier-html-embarque.git "%USERPROFILE%\Desktop\microclub-atelier-html-embarque"
 
-## Pour les synchronisations suivantes
+## Pour les synchronisations suivantes
 
 	cd "%USERPROFILE%\Desktop\microclub-atelier-html-embarque"
 	git pull
