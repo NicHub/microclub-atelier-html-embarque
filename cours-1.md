@@ -7,7 +7,7 @@
 
 # STRUCTURE MINIMALE D’UNE PAGE HTML 1
 
-Voici la structure minimale pour qu’un document soit considéré comme un document HTML par tous les agents utilisateurs[^AgentsUtilisateur].
+Voici la structure minimale pour qu’un document soit considéré comme un document HTML par tous les [agents utilisateurs][User agent].
 
     <!DOCTYPE html>
     <html>
@@ -22,12 +22,12 @@ Voici la structure minimale pour qu’un document soit considéré comme un docu
 
 On voit dans cet exemple que le code HTML est composé de balises. Les balises absolument obligatoires pour qu’un document soit considéré comme un document HTML sont :
 
-- `<!DOCTYPE html>`
-- `<html></html>`
-- `<head></head>`
-- `<meta charset=utf-8 />`
-- `<title></title>`
-- `<body></body>`
+    1. <!DOCTYPE html>
+    2. <html></html>
+    3. <head></head>
+    4. <meta charset=utf-8 />
+    5. <title></title>
+    6. <body></body>
 
 Nous aurons besoin d’autres balises pour étoffer nos documents HTML, mais les 6 ci-dessus doivent toujours être présentes.
 
@@ -40,16 +40,16 @@ Une balise (ou “tag” en anglais), est composée d’une balise ouvrante et d
 
 Pour la balise ouvrante, la structure est :
 
-- Chevron ouvrant (<)
-- Le nom de la balise (p)
-- chevron fermant (>)
+- Chevron ouvrant (`<`)
+- Le nom de la balise (dans cet exemple “`p`”)
+- chevron fermant (`>`)
 
 Pour la balise fermante, la structure est :
 
-- Chevron ouvrant (<)
-- Barre oblique (/)
-- Le nom de la balise (p)
-- chevron fermant (>)
+- Chevron ouvrant (`<`)
+- Barre oblique (`/`)
+- Le nom de la balise (dans cet exemple “`p`”)
+- chevron fermant (`>`)
 
 À l’intérieur d’une balise, on peut inclure :
 
@@ -58,17 +58,50 @@ Pour la balise fermante, la structure est :
 - d’autres balises : `<p>du <i>texte</i></p>`
 - plein d’autres balises : `<p><b>du <i>texte</i></b></p>`
 
-Dans le cas où la balise ne contient rien, il existe une notation compacte avec la barre oblique avant le chevron fermant :
+Dans le cas où la balise ne contient rien, il existe une notation compacte avec la barre oblique avant le chevron fermant, que l’on nomme “balise autofermante”, par exemple :
 
+    <br />
     <img />
+    <meta />
+
+> Dans le cas des balises autofermantes, l’espace avant la barre oblique est optionnel.
+
+
+Quelques balises intéressantes
+
+    <p>Ceci est un paragraphe.
+    Les retours à la lignes doivent y
+    être explicitement indiqués avec la balise <br />
+    &lt;br />
+    </p>
+
+    <p><strong>Texte en gras</strong></p>
+
+    <p><em>Texte en italique</em></p>
+
+    <p><strong>Texte en gras <em>avec une partie italique</em></strong></p>
+
+    <pre>Ceci est un texte préformaté
+         dans lequel les passages à la ligne
+         et les espaces
+         seront respectés</pre>
+
+    <p>Le <span>est</span> utilisé pour formater différement une partie du texte.</p>
+
+    <div>Le div sert à regrouper des balises.
+        <p>...</p>
+        <p>...</p>
+        <div></div>
+    </div>
+
 
 La norme HTML définit 130 balises différentes que vous pouvez découvrire en suivant les liens ci-dessous.
 
 ## À lire
 
-- [Les balises HTML et leur rôle][Les balises HTML et leur rôle]
-- [Référence des éléments HTML][Référence des éléments HTML]
-- [HTML Element Reference][HTML Element Reference]
+- [Les balises HTML et leur rôle (MDN fr)][Les balises HTML et leur rôle]
+- [Référence des éléments HTML (MDN fr)][Référence des éléments HTML]
+- [HTML Element Reference (W3Schools en)][HTML Element Reference]
 
 
 # LES ATTRIBUTS
@@ -79,33 +112,127 @@ Par exemple, la balise `<img>` a deux attributs obligatoires : `src` et `alt`. 
 
     <img src="image.jpg" alt="image de démo" />
 
-voir <https://developer.mozilla.org/fr/docs/Web/HTML/Element/Img>
+[Voir les attributs possibles de la balise `<img />` sur le site MDN.][img MDN]
+
 
 
 # LE DOCTYPE
 
-Exemple
+Le doctype est une chaine de caractère présente au début du fichier et qui définit explicitement la version d’HTML utilisée dans le document. Le mot *doctype* est un mot-valise tiré de la locution anglaise *Document type declaration*. Le seul doctype que nous utiliserons dans le cadre de ce cours est le doctype HTML 5 qui se déclare de la manière suivante :
 
     <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Exemple minimal</title>
-        </head>
-        <body>
-            <p></p>
-            <p>du texte</p>
-            <p>du <i>texte</i></p>
-            <p><b>du <i>texte</i></b></p>
-            <img src="test.jpg" />
-        </body>
+
+Si on ne spécifie pas de doctype, alors les agents utilisateurs en *mode quirks*, c’est-à-dire que le moteur de disposition émule le comportement non-standard de Navigator 4 et d’Internet Explorer 5. Ce mode permet de prendre en charge les sites web rédigés avant l’adoption généralisées des standards web.
+
+Si on spécifie un doctype, alors les agents utilisateurs utilisent le mode standard total ou éventuellement le mode quasi-standard.
+
+Si vous désirez plus d’informations sur ces différents modes, vous pouvez vous référer aux liens ci-dessous. Je vous conseille de toute façon de ne pas jouer avec le feu et de toujours spécifier le doctype HTML 5 (`<!DOCTYPE html>`).
+
+## À lire
+
+- [Document type declaration (Wikipedia en)][Document type declaration]
+- [Doctype (Wikipedia fr)][Doctype]
+- [Mode quirks de Mozilla (MDN fr)][Mode quirks de Mozilla]
+- [Mode presque standard de Gecko (MDN fr)][Mode presque standard de Gecko]
+
+
+# ESPACE DE NOM
+
+Certains validateurs comme celui de l’éditeur [*Oxygen XML Editor*][oxygenxml.com] imposent que l’espace de nom soit spécifié et ceci se fait dans l’attribut `xmlns` de la balise `<html>` ouvrante :
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    ...
     </html>
 
 
+# VALIDATION
 
-[^AgentsUtilisateur]: Un *user agent* ou *agent utilisateur* est une application cliente utilisée avec un protocole réseau particulier ; l'expression est plus généralement employée comme référence pour celles qui accèdent au World Wide Web. Les agents utilisateur du Web vont de la gamme des navigateurs jusqu'aux robots d'indexation, en passant par les lecteurs d'écran ou les navigateurs braille pour les personnes ayant une incapacité.
+[W3C Markup Validation Service][validator input]
+
+
+# ÉDITEURS HTML
+
+- [Brackets][brackets.io] (que nous allons utiliser pour ce cours)
+- [Sublime Text 3][sublimetext.com] (que j’utilise au quotidien)
+- [Atom][atom.io]
+- [Oxygen XML Editor][oxygenxml.com]
+- [Visual Studio Code][code.visualstudio.com]
+- [Notepad++][notepad++]
+- [BBedit][bbedit]
+- [Gedit][gedit]
+- [Nano][nano]
+
+
+# LES ENTITÉS
+
+Les entités servent à référencer les caractères par un code qui peut être textuel, décimal ou hexadécimal. Ceci est particulièrement utile dans les cas suivants :
+
+- Le caractère est aussi utilisé dans la grammaire HTML comme les signes &lt;, &gt; et &amp;.
+- Le caractère peut être confondu avec un autre ayant un glyphe visuellement identique, comme l’espace insécable qui est visuellement identique à l’espace simple et que l’on représentera par donc par `&nbsp;` ou le trait d’union insécable, identique au trait d’union normal et que l’on représentera par `&#8209;`.
+- Le type d’encodage du fichier texte ne permet pas de représenter le caractère. Par exemple si le fichier est encodé en `windows-1257`, le caractère “ç” ne sera pas utilisable directement, mais pourra quand même être représenté avec l’entité `&ccedil;`.
+- Le caractère ne s’affiche pas correctement dans votre éditeur, comme le visage cornu souriant (`&#128520;` = &#128520;).
+- Le caractère est par nature invisible, comme l’espace sans chasse (`&#8203;`).
+
+> Pour tout nouveau projet, il est important de s’assurer que tous vos fichiers sont encodés en `utf-8` qui est une norme quasi universelle aujourd’hui en occident. Le premier avantage est que vos fichiers seront lisibles par la grande majorité des agents utilisateurs et le deuxième avantage est que vous ne serez pas contraint d’utiliser plus d’entités que nécessaire.
+
+Quelques entités
+
+| Caractère               | Glyphe    | Entité textuelle | Entité décimale | Entité hexadécimale |
+| :---                    | :---      | :---             | :---            | :---                |
+| Signe inférieur à       | &lt;      | `&lt;`           | `&#60;`         | `&#x3C;`            |
+| Signe supérieur à       | &gt;      | `&gt;`           | `&#62;`         | `&#x3E;`            |
+| Esperluette             | &amp;     | `&amp;`          | `&#38;`         | `&#x26;`            |
+| Espace insécable        | &#160;    | `&nbsp;`         | `&#160;`        | `&#xA0;`            |
+| Trait d’union insécable | &#8209;   |                  | `&#8209;`       | `&#x2011;`          |
+| Visage cornu souriant   | &#128520; |                  | `&#128520;`     | `&#x1F608;`         |
+| Espace sans chasse      | &#8203;   |                  | `&#8203;`       | `&#x200B;`          |
+
+
+Vous trouverez une liste exhaustive d’entités sur [unicode-table.com][unicode-table.com]
+
+
+
+
+
+
+[unicode-table.com]: https://unicode-table.com/fr/
+
+[nano]: https://www.nano-editor.org/
+
+[gedit]: https://doc.ubuntu-fr.org/gedit
+
+[bbedit]: https://www.barebones.com/products/bbedit/
+
+[notepad++]: https://notepad-plus-plus.org/fr/
+
+[code.visualstudio.com]: https://code.visualstudio.com/
+
+[atom.io]: https://atom.io/
+
+[sublimetext.com]: https://www.sublimetext.com/
+
+[brackets.io]: http://brackets.io/
+
+[User agent]: https://fr.wikipedia.org/wiki/User_agent
 
 [Les balises HTML et leur rôle]: https://developer.mozilla.org/fr/Apprendre/HTML/Balises_HTML
 
 [Référence des éléments HTML]: https://developer.mozilla.org/fr/docs/Web/HTML/Element
 
 [HTML Element Reference]: https://www.w3schools.com/tags/
+
+[Doctype]: https://fr.wikipedia.org/wiki/Doctype
+
+[Document type declaration]: https://en.wikipedia.org/wiki/Document_type_declaration
+
+[Mode quirks de Mozilla]: https://developer.mozilla.org/fr/docs/Web/HTML/Quirks_Mode_and_Standards_Mode
+
+[img MDN]: https://developer.mozilla.org/fr/docs/Web/HTML/Element/Img
+
+[Mode presque standard de Gecko]: https://developer.mozilla.org/fr/docs/Mozilla/Mode_presque_standard_de_Gecko
+
+[oxygenxml.com]: https://www.oxygenxml.com/
+
+[validator.w3.org]: https://validator.w3.org/
+
+[validator input]: https://validator.w3.org/#validate_by_input
