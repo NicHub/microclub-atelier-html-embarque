@@ -226,10 +226,10 @@ La norme HTML 5
 ### Attributs XHTML
 
 - Les attributs doivent être écrits en minuscules.
-- Les valeurs des attributs doivent être entourés de guillemets simples (`'`) ou doubles (`"`).
+- Les valeurs des attributs doivent être entourées de guillemets simples (`'`) ou doubles (`"`).
 - La minimisation des attributs est interdite.<br /> `FAUX  ⇒ <input checked />`<br />`JUSTE ⇒ <input checked="checked" />`
 
-> Note : Je préfère souvent les guillemets doubles (`"`) aux guillemets simples (`'`), parce que l’apostrophe sur un clavier standard est aussi un guillemet simple et que ça peut rendre les recherches fastidieuses, particulièrement quand on veut appliquer les règles de typographie soignées qui imposent d’utiliser l’apostrophe typographique (`’`) au lieu de l’apostrophe doite (`'`).
+> Note : Je préfère souvent les guillemets doubles (`"`) aux guillemets simples (`'`), parce que l’apostrophe sur un clavier standard est aussi un guillemet simple et que ça peut rendre les recherches fastidieuses, particulièrement quand on veut appliquer les règles de typographie soignées qui imposent d’utiliser l’apostrophe typographique (`’`) au lieu de l’apostrophe droite (`'`).
 
 
 
