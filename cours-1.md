@@ -5,7 +5,7 @@
 # COURS 1
 
 
-# STRUCTURE MINIMALE D’UNE PAGE HTML 1
+# STRUCTURE MINIMALE D’UNE PAGE HTML
 
 Voici la structure minimale pour qu’un document soit considéré comme un document HTML par tous les [agents utilisateurs][User agent].
 
@@ -34,21 +34,21 @@ Nous aurons besoin d’autres balises pour étoffer nos documents HTML, mais les
 
 # LES BALISES
 
-Une balise (ou “tag” en anglais), est composée d’une balise ouvrante et d’une balise fermante.
+Une balise (ou “tag” en anglais) est composée d’une balise ouvrante et d’une balise fermante.
 
     <p></p>
 
 Pour la balise ouvrante, la structure est :
 
 - Chevron ouvrant (`<`)
-- Le nom de la balise (dans cet exemple “`p`”)
+- Le nom de la balise (dans l’exemple ci-dessus “`p`”)
 - chevron fermant (`>`)
 
 Pour la balise fermante, la structure est :
 
 - Chevron ouvrant (`<`)
 - Barre oblique (`/`)
-- Le nom de la balise (dans cet exemple “`p`”)
+- Le nom de la balise (dans l’exemple ci-dessus “`p`”)
 - chevron fermant (`>`)
 
 À l’intérieur d’une balise, on peut inclure :
@@ -70,7 +70,7 @@ Dans le cas où la balise ne contient rien, il existe une notation compacte avec
 Quelques balises intéressantes
 
     <p>Ceci est un paragraphe.
-    Les retours à la lignes doivent y
+    Les retours à la ligne doivent y
     être explicitement indiqués avec la balise <br />
     &lt;br />
     </p>
@@ -86,7 +86,7 @@ Quelques balises intéressantes
          et les espaces
          seront respectés</pre>
 
-    <p>Le <span>est</span> utilisé pour formater différement une partie du texte.</p>
+    <p>Le <span>est</span> utilisé pour formater différemment une partie du texte.</p>
 
     <div>Le div sert à regrouper des balises.
         <p>...</p>
@@ -94,8 +94,11 @@ Quelques balises intéressantes
         <div></div>
     </div>
 
+    <img src="http://ouilogique.com/images/site-logo.png" alt="image de démo" />
 
-La norme HTML définit 130 balises différentes que vous pouvez découvrire en suivant les liens ci-dessous.
+
+
+La norme HTML définit 130 balises différentes que vous pouvez découvrir en suivant les liens ci-dessous.
 
 ## À lire
 
@@ -110,9 +113,15 @@ Toutes les balises acceptent des attributs, certains étant obligatoires d’aut
 
 Par exemple, la balise `<img>` a deux attributs obligatoires : `src` et `alt`. À noter que l’attribut `alt` est souvent omis dans les pages web que vous rencontrerez. Il est pourtant fortement conseillé, car il s’agit du texte qui remplacera l’image si celle-ci ne peut pas être affichée. Cet attribut est aussi utilisé par les systèmes de lectures pour les malvoyants.
 
-    <img src="image.jpg" alt="image de démo" />
+    <img src="http://ouilogique.com/images/site-logo.png" alt="image de démo" />
 
 [Voir les attributs possibles de la balise `<img />` sur le site MDN.][img MDN]
+
+Les attributs peuvent être mis à ligne pour faciliter la lecture
+
+    <img
+        src="http://ouilogique.com/images/site-logo.png"
+        alt="image de démo" />
 
 
 
@@ -122,9 +131,9 @@ Le doctype est une chaine de caractère présente au début du fichier et qui d�
 
     <!DOCTYPE html>
 
-Si on ne spécifie pas de doctype, alors les agents utilisateurs en *mode quirks*, c’est-à-dire que le moteur de disposition émule le comportement non-standard de Navigator 4 et d’Internet Explorer 5. Ce mode permet de prendre en charge les sites web rédigés avant l’adoption généralisées des standards web.
+Si on ne spécifie pas de doctype, alors les agents utilisateurs en *mode quirks*, c’est-à-dire que le moteur de disposition émule le comportement non standard de Navigator 4 et d’Internet Explorer 5. Ce mode permet de prendre en charge les sites web rédigés avant l’adoption généralisée des standards web.
 
-Si on spécifie un doctype, alors les agents utilisateurs utilisent le mode standard total ou éventuellement le mode quasi-standard.
+Si on spécifie un doctype, alors les agents utilisateurs utilisent le mode standard total ou éventuellement le mode quasi standard.
 
 Si vous désirez plus d’informations sur ces différents modes, vous pouvez vous référer aux liens ci-dessous. Je vous conseille de toute façon de ne pas jouer avec le feu et de toujours spécifier le doctype HTML 5 (`<!DOCTYPE html>`).
 
@@ -145,11 +154,6 @@ Certains validateurs comme celui de l’éditeur [*Oxygen XML Editor*][oxygenxml
     </html>
 
 
-# VALIDATION
-
-[W3C Markup Validation Service][validator input]
-
-
 # ÉDITEURS HTML
 
 - [Brackets][brackets.io] (que nous allons utiliser pour ce cours)
@@ -158,9 +162,16 @@ Certains validateurs comme celui de l’éditeur [*Oxygen XML Editor*][oxygenxml
 - [Oxygen XML Editor][oxygenxml.com]
 - [Visual Studio Code][code.visualstudio.com]
 - [Notepad++][notepad++]
-- [BBedit][bbedit]
+- [BBEdit][bbedit]
 - [Gedit][gedit]
 - [Nano][nano]
+
+
+# VALIDATION
+
+À ce stade, nous pouvons commencer à vérifier que ce que nous faisons est valide avec le validateur du World Wide Web Consortium (W3C)
+
+[W3C Markup Validation Service][validator input]
 
 
 # LES ENTITÉS
