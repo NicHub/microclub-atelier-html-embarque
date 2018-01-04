@@ -2,7 +2,7 @@
 **HTML EMBARQUÉ**
 =================
 
-# COURS 1
+# COURS 1 — HTML
 
 
 # STRUCTURE MINIMALE D’UNE PAGE HTML
@@ -202,9 +202,44 @@ Quelques entités
 Vous trouverez une liste exhaustive d’entités sur [unicode-table.com][unicode-table.com]
 
 
+# HTML vs XHTML
+
+La norme HTML 5
 
 
 
+## Les différences principales
+
+### Structure du document
+
+- La Doctype `<!DOCTYPE html>` est obligatoire.
+- L’attribut `xmlns="http://www.w3.org/1999/xhtml"` est obligatoire.
+- Les balises `<html>`, `<head>`, `<title>`, et `<body>` sont obligatoires.
+
+### Balises XHTML
+
+- Les balises doivent être imbriquées correctement
+- Les balises doivent être systématiquement fermées ou autofermées.
+- Les balises doivent être écrites en minuscules.
+- La balise racine `<html>` doit être unique.
+
+### Attributs XHTML
+
+- Les attributs doivent être écrits en minuscules.
+- Les valeurs des attributs doivent être entourés de guillemets simples (`'`) ou doubles (`"`).
+- La minimisation des attributs est interdite.<br /> `FAUX  ⇒ <input checked />`<br />`JUSTE ⇒ <input checked="checked" />`
+
+> Note : Je préfère souvent les guillemets doubles (`"`) aux guillemets simples (`'`), parce que l’apostrophe sur un clavier standard est aussi un guillemet simple et que ça peut rendre les recherches fastidieuses, particulièrement quand on veut appliquer les règles de typographie soignées qui imposent d’utiliser l’apostrophe typographique (`’`) au lieu de l’apostrophe doite (`'`).
+
+
+
+## À lire
+
+[HTML and XHTML (W3Schools en)][HTML and XHTML]
+
+
+
+[HTML and XHTML]: https://www.w3schools.com/html/html_xhtml.asp
 
 [unicode-table.com]: https://unicode-table.com/fr/
 
