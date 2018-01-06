@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS</title>
+</head>
+<body>
+    <p id="mode"></p>
+    
+<script>
+    console.log((document.compatMode === 'CSS1Compat' ? 'standard' : 'quirks'));
+
+    
+    var res = "";
+    switch(document.compatMode)
+    {
+        case "BackCompat":
+            res = "quirks";
+            break;
+        case "CSS1Compat":
+            res = "standard (no-quirks ou limited-quirks)";
+            break;
+        default:
+            res = "inconnu";
+            break;
+    }
+    console.log(res);
+    a = document.getElementById("mode");
+    a.innerHTML = res;
+    
+</script>
+</body>    
+</html>
