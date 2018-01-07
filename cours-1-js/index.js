@@ -1,7 +1,8 @@
 "use strict";
-function main()
+function main(source)
 {
     var now = new Date();
-    console.log("Début du script " + now.getTime());
+    console.log("fonction main " + now.getTime() +
+                "\nsource = " + source);
 }
-main();
+main("index.js");

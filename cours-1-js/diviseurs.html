@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diviseurs</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,400');
+    body {
+      font-family: 'Source Sans Pro', monospace;
+      font-size: 14pt;
+      margin: 2em;
+    }
+    #main-div > * {
+      margin-top: 50px
+    }
+    #btn1, #out1 {
+      width: 100%;
+    }
+    p.border {
+      min-height: 60px;
+      border: 1px solid #DDD;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div id="main-div" class="col-xs-12 col-xs-offset-0
+                                col-sm-10 col-sm-offset-1
+                                col-md-6  col-md-offset-3
+                                col-lg-4  col-lg-offset-4
+                                col-xl-2  col-xl-offset-5">
+
+        <h1>Trouver les&nbsp;diviseurs</h1>
+
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon" id="sizing-addon1">&nbsp;</span>
+          <input id="in1" type="number" class="form-control text-center" placeholder="Nombre" />
+        </div>
+
+        <button onclick="find_diviseurs()" id="btn1" type="button" class="btn btn-primary btn-lg">Afficher les diviseurs</button>
+
+        <p id="nbres"></p>
+        <p id="time"></p>
+        <p id="out1" class="border"></p>
+
+      </div>
+    </div>
+  </div>
+  <script src="diviseurs.js"></script>
+</body>
+</html>
